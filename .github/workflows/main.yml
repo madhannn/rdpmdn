@@ -37,6 +37,5 @@ jobs:
       run: sc start ngrok
     - name: Connect to your RDP.
       run: cmd /c NGROK-CHECK.bat
-    - name: All Done! You can close Tab now! Maximum VM time:24h.
-                  Happy using :) 
+    - name: All Done! You can close Tab now! Maximum VM time:24h. Happy using :) 
       run: cmd /c loop.bat 

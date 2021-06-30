@@ -1,6 +1,6 @@
 @echo off
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
-net config server /srvcomment:"Windows Server 2019 By AvishkarPatil" > out.txt 2>&1
+net config server /srvcomment:"Windows Server 2019 By madhannn" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v Wallpaper /t REG_SZ /d D:\a\wallpaper.bat
 net user administrator madhannn#20 /add >nul
@@ -19,5 +19,5 @@ echo Username: administrator
 echo Password: madhannn#20
 echo .
 echo  RDP By madhannn :) 
-echo   Please Login to Your RDP !
-ping -n 10 127.0.0.1 >nul
+echo  Please Login to Your RDP !
+ping -n 10 127.0.0.1 >nul 

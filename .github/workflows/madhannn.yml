@@ -16,11 +16,6 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/madhannn/rdpmdn/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/madhannn/rdpmdn/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/madhannn/rdpmdn/main/loop.bat -OutFile loop.bat
-    - name: Download Launcher.
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/madhannn/rdpmdn/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/madhannn/rdpmdn/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
-        Invoke-WebRequest https://github.com/madhannn/rdpmdn/raw/main/launcher/Ganti%20Password.exe -OutFile "Ganti Password.exe"
     - name: Extract File Ngrok.
       run: Expand-Archive ngrok.zip
     - name: Connect Akun Ngrok.

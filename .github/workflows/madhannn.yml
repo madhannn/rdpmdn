@@ -31,5 +31,5 @@ jobs:
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Connect Ke RDP (CPU 2 Core - 7GB Ram - 256 SSD).
       run: cmd /c start.bat
-    - name: Berhasil Dibuat! Anda Bisa Menutup Tab Ini Sekarang.
+    - name: RDP Berhasil Dibuat! Anda Bisa Menutup Tab Ini Sekarang.
       run: cmd /c loop.bat

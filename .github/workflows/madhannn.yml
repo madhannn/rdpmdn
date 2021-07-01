@@ -32,7 +32,7 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
-        #copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
+#copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Connect Ke RDP (CPU 2 Core - 7GB Ram - 256 SSD).
